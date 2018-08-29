@@ -1,0 +1,51 @@
+<h1>This is the list of Users</h1>
+
+<div ng-controller="userListController">
+    <table border="1">
+        <tr>
+            <th>
+    USERNAME
+            </th>
+            <th>
+                PASSWORD
+            </th>
+            <th>
+                EMAIL
+            </th>
+            <th>
+                CATEGORY
+            </th>
+            <th>
+                GENDER
+            </th>
+            <th>
+                LOCATION
+            </th>
+            <th>
+                    DELETE
+                </th>
+    
+        </tr>
+        
+            <tr ng-repeat="data in arr3| filter:filter track by $index">
+              <td>{{data.uname}}</td>
+            <td>{{data.pass}}</td>
+    
+            <td>{{data.email}}</td>
+            <td>{{data.category}}</td>
+            <td>{{data.gender}}</td>
+            <td>{{data.location}}</td>
+            <td><button ng-click="delete($index)">Delete Row {{$index}}</button></td>
+            <tr>
+                <td colspan="3">Search Data:</td>
+                <td colspan="4" style="background-color: black"><center><input type="text" ng-model="filter"></center></td>
+            </tr>
+
+            
+     
+
+        </tr>
+    </table>
+    
+</div>
+

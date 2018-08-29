@@ -1,0 +1,35 @@
+
+<h1>{{pageTitle}}</h1>
+<h1>Welcome to User Details Page</h1>
+<h3> create new user</h3>
+
+<form>
+ <input type="text" placeholder="username" value="" ng-model="uname" /><br><br>
+    <input type="text" placeholder="password" value="" ng-model="pass"/><br><br>
+    <input type="text" placeholder="email" value="" ng-model="email"/><br><br>
+
+   Category: <select ng-model="category">
+            
+        <option>
+Admin
+        </option>
+        <option>
+ Manager
+            </option>
+            <option>
+ Consultant
+                </option>
+`    </select>
+<br>
+<br>
+    <input type="radio" name="gender" value="male" ng-model="gender">Male
+    <input type="radio" name="gender" value="female">Female<br><br>
+
+    <input type="text" placeholder="location" ng-model="location"><br><br>
+    <input type="button" value="Save" ng-click="save()">
+
+    
+</form>
+
+<br>
+

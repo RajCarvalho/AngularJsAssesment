@@ -1,0 +1,24 @@
+[{
+"name":"raj",
+"age":24,
+"org":"marlabs"
+},
+{
+    "name":"boney",
+    "age":25,
+    "org":"google"
+    },
+    {
+        "name":"primus",
+        "age":23,
+        "org":"facebook"
+        },
+        {
+            "name":"riche",
+            "age":27,
+            "org":"linkedIn"
+            }
+
+
+
+]
